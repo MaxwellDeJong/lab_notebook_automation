@@ -26,5 +26,7 @@ if [ $update == 1 ] || [ $month_file_exists == 0 ]; then
 
     while read p; do
         echo "\input{"$1"/"$2"/"$p"/"$p"}" >> $month_file
+        echo "\FloatBarrier" >> $month_file
+        echo "\newpage" >> $month_file
     done <$dates_file
 fi
