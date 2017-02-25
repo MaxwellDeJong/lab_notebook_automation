@@ -18,7 +18,7 @@ newfile=../$year/$month/$foldername/$filename
 # Only make file if today is weekday or manual override
 if [ "$dayofweek" != 6 ] && [ "$dayofweek" != 7 ]; then
     makefile=1
-elif [ "weekendOverride" == 1]; then
+elif [ "$weekendOverride" == 1 ]; then
     makefile=1
 else
     makefile=0
