@@ -34,3 +34,6 @@ if [ "$makefile" == 1 ]; then
         printf $secstr"\n"$labelstr > $newfile
     fi
 fi
+
+unset today
+export today=$newdir
